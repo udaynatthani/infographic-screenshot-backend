@@ -8,7 +8,7 @@ const PORT = 3000;
 
 app.use(cors());
 
-const clpath = path.join(__dirname, "../frontend");
+const clpath = path.join(__dirname, "../frontend"); 
 app.use(express.static(clpath)); 
 
 app.get("/", (req, res) => {
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 app.get("/screenshot", async (req, res) => {
   
-  const screenshotUrl = `https://infographic-screenshot-frontend.vercel.app/`;
+  const screenshotUrl = `https://infographic-screenshot-backend.vercel.app/`; 
 
   try {
     const browser = await puppeteer.launch({

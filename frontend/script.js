@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("✅ script.js loaded");
 
-  const button = document.getElementById("screenshotBtn");
+  const button = document.getElementById("screenshot-btn"); // Match the actual button ID
 
   if (!button) {
     console.error("❌ Element with ID 'screenshot-btn' not found in the DOM.");
@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   button.addEventListener("click", async () => {
-    const screenshotAPI = "https://infographic-screenshot-backend.onrender.com"; // ✅ Your backend URL
-    const url = "https://infographic-screenshot-frontend.vercel.app"; // ✅ Your frontend URL
+    const screenshotAPI = "https://infographic-screenshot-backend.onrender.com/screenshot";
+    const url = "https://infographic-screenshot-frontend.vercel.app"; 
 
     try {
       const response = await fetch(`${screenshotAPI}?url=${encodeURIComponent(url)}`);
