@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/screenshot", async (req, res) => {
-  // Use deployed frontend URL
+  
   const screenshotUrl = `https://infographic-screenshot-backend.vercel.app/`; 
 
   try {
