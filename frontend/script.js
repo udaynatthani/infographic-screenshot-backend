@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("✅ script.js loaded");
 
-  const button = document.getElementById("screenshot-btn");
+  const button = document.getElementById("screenshotBtn");
 
   if (!button) {
     console.error("❌ Element with ID 'screenshot-btn' not found in the DOM.");
