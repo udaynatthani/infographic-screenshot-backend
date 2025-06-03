@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("✅ script.js loaded");
 
-  const button = document.getElementById("screenshotBtn"); // Match the actual button ID
+  const button = document.getElementById("screenshotBtn");
 
   if (!button) {
     console.error("❌ Element with ID 'screenshot-btn' not found in the DOM.");
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   button.addEventListener("click", async () => {
-    const screenshotAPI = "https://infographic-screenshot-backend.onrender.com/screenshot";
+    const screenshotAPI = "https://infographic-screenshot-backend.onrender.com";
     const url = "https://infographic-screenshot-frontend.vercel.app"; 
 
     try {
