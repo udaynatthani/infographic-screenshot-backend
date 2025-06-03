@@ -1,7 +1,6 @@
 document.getElementById("screenshot-btn").addEventListener("click", async () => {
-  // ✅ Replace with your actual deployed URLs
-  const screenshotAPI = "https://your-vercel-app.vercel.app/screenshot"; // <-- Vercel backend URL
-  const url = "https://your-netlify-site.netlify.app/index.html";        // <-- Netlify frontend URL
+  const screenshotAPI = "https://infographic-screenshot-backend.onrender.com/screenshot"; // backend URL
+  const url = "https://infographic-screenshot-frontend.vercel.app"; // your frontend deployed URL
 
   try {
     const response = await fetch(`${screenshotAPI}?url=${encodeURIComponent(url)}`);
