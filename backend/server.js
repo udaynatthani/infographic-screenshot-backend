@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 app.get("/screenshot", async (req, res) => {
   
-  const screenshotUrl = `https://infographic-screenshot-backend.vercel.app/`;
+  const screenshotUrl = `https://infographic-screenshot-frontend.vercel.app/`;
 
   try {
     const browser = await puppeteer.launch({
